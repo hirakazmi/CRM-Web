@@ -1,0 +1,7 @@
+<hi>All Contacts</h1>
+
+  <ul>
+  <% Contact.all.each do |contact| %>
+    <li><%= "First name: #{contact.first_name} Last name: #{contact.last_name} Email: #{contact.email} Notes: #{contact.note}"%></li>
+  <% end %>
+  </ul>
