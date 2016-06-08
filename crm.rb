@@ -5,5 +5,10 @@ require 'sinatra'
 
 get "/" do
   @crm_app_name = "Hira's CRM"
+  @date = DateTime.now.strftime('%m/%d/%Y')
     erb :index
+end
+
+get "/contacts" do
+  erb :contacts
 end
