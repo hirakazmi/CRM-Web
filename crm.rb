@@ -16,3 +16,7 @@ get "/contacts" do
   Contact.create('Kal', 'El', "superman@metropolis.com", 'smallville was terrible')
   erb :contacts
 end
+
+get "/contacts/new" do
+  erb :new_contact
+end
