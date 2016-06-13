@@ -57,6 +57,8 @@ put '/contacts/:id' do
     @contact.email = params[:email]
     @contact.note = params[:note]
 
+    @contact.save
+
     redirect to('/contacts')
   else
     raise Sinatra::NotFound
