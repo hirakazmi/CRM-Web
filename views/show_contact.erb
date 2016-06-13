@@ -1,15 +1,29 @@
 
 
 
+<section class="output form">
 
 <h1><%= @contact.first_name %> <%= @contact.last_name %></h1>
 <p><strong>Email:</strong> <%= @contact.email %></p>
 <p><strong>Note:</strong></p>
 <p><%= @contact.note %></p>
 
+</section>
+
+<section class="contactbutton">
+
+<form action='/contacts/<%= @contact.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete'>
+  <input type='submit' value='Delete Contact'>
+</form>
+
+</section>
+
 <ul class="nav">
   <li><a href="/">Home</a></li>
   <li><a href="/contacts">View all contacts</a></li>
   <li><a href="/contacts/new">Add a new contact</a></li>
+  <li><a href= "/contacts/<%= @contact.id %>/edit">Edit Contact</a></li>
+
 
 </ul>
