@@ -1,0 +1,84 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ----------- Background------------*/
+
+html {
+    background: url("crm.png") no-repeat bottom center fixed;
+    background-color: #02685b
+}
+
+/* ---------Typography ------------ */
+
+@@font-face {
+    font-family: "cabana";
+    src: url("/fonts/Cabana-Regular.otf") format("truetype");
+}
+
+.intro {
+    text-align: center;
+    color: #ffeabd;
+    font-family: "cabana", sans-serif;
+    font-kerning: normal;
+    font-size: 80px;
+    letter-spacing: 10px;
+    margin-top: 180px;
+}
+
+.intro2 {
+    text-align: center;
+    color: #ffeabd;
+    font-family: "cabana";
+    font-kerning: normal;
+    font-size: 80px;
+    letter-spacing: 10px;
+    margin-top: 50px;
+}
+
+.allcontacts {
+  margin: 0;
+  padding-top: 0;
+  margin-top: -40px;
+}
+
+
+/*--------Navigation------------*/
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 630px;
+    font-family: "cabana";
+    letter-spacing: 8px;
+    background-color: #285953
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #02685b
+}
+
+/*--------forms-----------*/
+
+.form {
+margin-left: 320px;
+margin-top: 150px;
+}
