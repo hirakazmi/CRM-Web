@@ -1,7 +1,16 @@
 
 
 
-<h1>Create new Contact</h1>
+<h1 class="intro2">Create new Contact</h1>
+
+<ul class="nav">
+  <li><a href="/">Home</a></li>
+  <li><a href="/contacts">View all contacts</a></li>
+  <li><a href="/contacts/new">Add a new contact</a></li>
+
+</ul>
+
+<section class="form">
 
 <form action='/contacts' method='post'>
   <input type='text' name='first_name'>
@@ -10,3 +19,5 @@
   <input type='text' name='note'>
   <input type='submit' value='New Contact'>
 </form>
+
+</section>

@@ -4,6 +4,8 @@
 #   ruby test/contact_test.rb
 #
 # If your implementation of the Contact class is 'right', then you should see that all tests pass!
+
+
 class Contact
 
   attr_accessor :first_name, :last_name, :email, :note
@@ -27,7 +29,7 @@ class Contact
   end
 
   def self.create(first_name, last_name, email, note)
-    new_contact = self.new(first_name, last_name, email, note)
+    new_contact = Contact.new(first_name, last_name, email, note)
     @@contacts << new_contact
     return new_contact
   end

@@ -11,9 +11,6 @@ get "/" do
 end
 
 get "/contacts" do
-  Contact.create('Hira', 'Kazmi', 'hirarukh@gmail.com', "Cat lady")
-  Contact.create('Harry', 'Potter', 'boy-who-lived@hogwards.com', 'Expelliarmus')
-  Contact.create('Kal', 'El', "superman@metropolis.com", 'smallville was terrible')
   erb :contacts
 end
 
