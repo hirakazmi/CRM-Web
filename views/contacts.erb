@@ -1,8 +1,9 @@
 <h1 class="intro2">All Contacts</h1>
 
   <ul class="allcontacts">
-  <% Contact.all.each do |contact| %>
-    <li><%= "Name:   #{contact.first_name}  #{contact.last_name} Email:   #{contact.email} Notes:   #{contact.note}"%></li>
+    <% Contact.all.each do |contact| %>
+      <a href="/contacts/<%= contact.id %>"></a>
+        <li><%= "Name:   #{contact.first_name}  #{contact.last_name} Email:   #{contact.email} Notes:   #{contact.note}"%></li>
   <% end %>
   </ul>
 
