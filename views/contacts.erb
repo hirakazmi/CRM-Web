@@ -3,7 +3,7 @@
   <ul class="allcontacts">
     <% Contact.all.each do |contact| %>
       <a href="/contacts/<%= contact.id %>"></a>
-        <li><%= "Name:   #{contact.first_name}  #{contact.last_name} Email:   #{contact.email} Notes:   #{contact.note}"%></li>
+        <li><%= "Name:   #{contact.first_name}  #{contact.last_name}" %> <%= "Email:   #{contact.email} Notes:   #{contact.note}"%></li>
   <% end %>
   </ul>
 
